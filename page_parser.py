@@ -118,25 +118,3 @@ if __name__ == "__main__":
 
     article_parser = HTMLParser(data_path)
     article_parser.parse("New York Times", csv_filename="nyt_data.csv")
-    #title, article = nyt_parser('2007_01_18_NYT.html')
-    #print(title)
-    #print('\n')
-    #print(article)
-    #print(os.listdir("./data/New York Times"))
-
-    # nyt_path = os.path.join(data_path, "New York Times")
-    # files = os.listdir(nyt_path)
-    # html_files = [file for file in files if ".html" in file]
-    # print("There are a total of {} NYT articles".format(len(html_files)))
-    #
-    # classes = []
-    # # open the html file and parse it with bs4
-    # for file in html_files:
-    #     with open(os.path.join(nyt_path, file), 'rb') as f:
-    #         soup = BeautifulSoup(f, 'html.parser')
-    #
-    #         page_classes = [value for element in soup.find_all(class_ = True) for value in element['class']]
-    #         print(soup.find(class_='title'))
-    #     classes.extend(page_classes)
-    #
-    # print([v for v in set(classes) if "title" in v])
